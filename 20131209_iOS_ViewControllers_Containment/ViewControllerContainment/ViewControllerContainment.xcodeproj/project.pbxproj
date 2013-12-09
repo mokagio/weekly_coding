@@ -21,6 +21,7 @@
 		3FEA01071856106800C06D94 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FEA00E91856106800C06D94 /* UIKit.framework */; };
 		3FEA010F1856106800C06D94 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA010D1856106800C06D94 /* InfoPlist.strings */; };
 		3FEA01111856106800C06D94 /* ViewControllerContainmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA01101856106800C06D94 /* ViewControllerContainmentTests.m */; };
+		3FEA011D185613F300C06D94 /* VCCButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA011C185613F300C06D94 /* VCCButtonsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		3FEA010C1856106800C06D94 /* ViewControllerContainmentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ViewControllerContainmentTests-Info.plist"; sourceTree = "<group>"; };
 		3FEA010E1856106800C06D94 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3FEA01101856106800C06D94 /* ViewControllerContainmentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerContainmentTests.m; sourceTree = "<group>"; };
+		3FEA011B185613F300C06D94 /* VCCButtonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCCButtonsViewController.h; sourceTree = "<group>"; };
+		3FEA011C185613F300C06D94 /* VCCButtonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCCButtonsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		3FEA00EB1856106800C06D94 /* ViewControllerContainment */ = {
 			isa = PBXGroup;
 			children = (
+				3FEA011A185613B100C06D94 /* Controllers */,
 				3FEA00F41856106800C06D94 /* VCCAppDelegate.h */,
 				3FEA00F51856106800C06D94 /* VCCAppDelegate.m */,
 				3FEA00F71856106800C06D94 /* Main.storyboard */,
@@ -150,6 +154,15 @@
 				3FEA010D1856106800C06D94 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FEA011A185613B100C06D94 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3FEA011B185613F300C06D94 /* VCCButtonsViewController.h */,
+				3FEA011C185613F300C06D94 /* VCCButtonsViewController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +266,7 @@
 				3FEA00F21856106800C06D94 /* main.m in Sources */,
 				3FEA00FC1856106800C06D94 /* VCCViewController.m in Sources */,
 				3FEA00F61856106800C06D94 /* VCCAppDelegate.m in Sources */,
+				3FEA011D185613F300C06D94 /* VCCButtonsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
