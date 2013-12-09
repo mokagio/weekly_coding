@@ -5,6 +5,10 @@ Collection of weekly experiments and coding researches. The goal of a *daily_cod
 
 **Inline comments, PRs, and suggestions are very welcome!**
 
----
+##iOS
+
+* [2013-12-08 Basic View Controller Containment](https://github.com/mokagio/weekly_coding/tree/master/20131209_iOS_ViewControllers_Containment)
+
+===
 
 Why don't you follow me on Twitter? [@mokagio](http://twitter.com/mokagio)
