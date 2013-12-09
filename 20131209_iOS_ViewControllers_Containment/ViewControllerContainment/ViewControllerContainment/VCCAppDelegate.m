@@ -7,14 +7,14 @@
 //
 
 #import "VCCAppDelegate.h"
-#import "VCCSegmentViewController.h"
+#import "VCCContainerViewController.h"
 
 @implementation VCCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[VCCSegmentViewController alloc] init];
+    self.window.rootViewController = [[VCCContainerViewController alloc] init];
     [self.window makeKeyAndVisible];
     return YES;
 }

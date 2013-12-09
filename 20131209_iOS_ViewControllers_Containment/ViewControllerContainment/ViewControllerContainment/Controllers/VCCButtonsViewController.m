@@ -48,12 +48,12 @@
 {
     CGPoint firstCenter;
     firstCenter.x = self.view.frame.size.width / 2;
-    firstCenter.y = self.view.frame.size.height / 2 - self.firstButton.frame.size.height / 2 - 20;
+    firstCenter.y = self.view.frame.size.height / 2 - self.firstButton.frame.size.height / 2;
     self.firstButton.center = firstCenter;
     
     CGPoint secondCenter;
     secondCenter.x = self.view.frame.size.width / 2;
-    secondCenter.y = self.view.frame.size.height / 2 + self.secondButton.frame.size.height / 2 + 20;
+    secondCenter.y = self.view.frame.size.height / 2 + self.secondButton.frame.size.height / 2;
     self.secondButton.center = secondCenter;
 }
 
