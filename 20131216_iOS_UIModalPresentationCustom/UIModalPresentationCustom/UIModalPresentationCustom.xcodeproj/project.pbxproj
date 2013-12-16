@@ -21,6 +21,8 @@
 		3FDAF713185F516B00E92894 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDAF6F5185F516B00E92894 /* UIKit.framework */; };
 		3FDAF71B185F516B00E92894 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FDAF719185F516B00E92894 /* InfoPlist.strings */; };
 		3FDAF71D185F516B00E92894 /* UIModalPresentationCustomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAF71C185F516B00E92894 /* UIModalPresentationCustomTests.m */; };
+		3FDAF729185F521D00E92894 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAF727185F521D00E92894 /* ModalViewController.m */; };
+		3FDAF72A185F521D00E92894 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FDAF728185F521D00E92894 /* ModalViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		3FDAF718185F516B00E92894 /* UIModalPresentationCustomTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIModalPresentationCustomTests-Info.plist"; sourceTree = "<group>"; };
 		3FDAF71A185F516B00E92894 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3FDAF71C185F516B00E92894 /* UIModalPresentationCustomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIModalPresentationCustomTests.m; sourceTree = "<group>"; };
+		3FDAF726185F521D00E92894 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		3FDAF727185F521D00E92894 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		3FDAF728185F521D00E92894 /* ModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +124,9 @@
 				3FDAF707185F516B00E92894 /* ViewController.m */,
 				3FDAF709185F516B00E92894 /* Images.xcassets */,
 				3FDAF6F8185F516B00E92894 /* Supporting Files */,
+				3FDAF726185F521D00E92894 /* ModalViewController.h */,
+				3FDAF727185F521D00E92894 /* ModalViewController.m */,
+				3FDAF728185F521D00E92894 /* ModalViewController.xib */,
 			);
 			path = UIModalPresentationCustom;
 			sourceTree = "<group>";
@@ -228,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FDAF72A185F521D00E92894 /* ModalViewController.xib in Resources */,
 				3FDAF70A185F516B00E92894 /* Images.xcassets in Resources */,
 				3FDAF6FC185F516B00E92894 /* InfoPlist.strings in Resources */,
 				3FDAF705185F516B00E92894 /* Main.storyboard in Resources */,
@@ -249,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FDAF729185F521D00E92894 /* ModalViewController.m in Sources */,
 				3FDAF708185F516B00E92894 /* ViewController.m in Sources */,
 				3FDAF702185F516B00E92894 /* AppDelegate.m in Sources */,
 				3FDAF6FE185F516B00E92894 /* main.m in Sources */,

@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "ModalViewController.h"
 
 @interface ViewController ()
-
+- (IBAction)presentModalViewController:(id)sender;
 @end
 
 @implementation ViewController
@@ -24,6 +25,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)presentModalViewController:(id)sender {
+    ModalViewController *modal = [[ModalViewController alloc] init];
+    [self presentViewController:modal animated:YES completion:nil];
 }
 
 @end
