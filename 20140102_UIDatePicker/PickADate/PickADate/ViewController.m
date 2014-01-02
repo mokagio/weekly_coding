@@ -10,10 +10,18 @@
 
 @interface ViewController ()
 - (IBAction)doneButtonPressed:(id)sender;
-
+@property (nonatomic, strong) NSDate *date;
 @end
 
 @implementation ViewController
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super initWithCoder:aDecoder]) {
+        self.date = [NSDate date];
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
@@ -29,6 +37,7 @@
 //    ...you can't
 
     UIDatePicker *datePicker = [[UIDatePicker alloc] init];
+    datePicker.date = self.date;
     datePicker.center = self.view.center;
     
 //    We have to configure the UIDatePicker with a selector to handle it's events
@@ -46,10 +55,11 @@
 - (void)datePickerValueChanged:(UIDatePicker *)sender
 {
     NSLog(@"%@", sender.date);
+    self.date = sender.date;
 }
 
 - (IBAction)doneButtonPressed:(id)sender {
-    NSString *message = @"Some message here";
+    NSString *message = [NSString stringWithFormat:@"The date you picked is: %@.\n I'm good, am I not?! ;)", self.date];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
                                                     message:message
                                                    delegate:nil
