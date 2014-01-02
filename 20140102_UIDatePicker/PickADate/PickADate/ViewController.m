@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+- (IBAction)doneButtonPressed:(id)sender;
 
 @end
 
@@ -18,20 +19,20 @@
 {
     [super viewDidLoad];
     
-    // I was wandering if we can actually change the height of the picker...
+//    I was wandering if we can actually change the height of the picker...
 //
 //    CGRect datePickerFrame = CGRectMake(0, 0, self.view.frame.size.width / 2, 50);
 //    UIDatePicker *datePicker = [[UIDatePicker alloc] initWithFrame:datePickerFrame];
 //    datePicker.layer.borderColor = [UIColor redColor].CGColor;
 //    datePicker.layer.borderWidth = 1;
 //    
-    // ...you can't
+//    ...you can't
 
     UIDatePicker *datePicker = [[UIDatePicker alloc] init];
     datePicker.center = self.view.center;
     
-    // We have to configure the UIDatePicker with a selector to handle it's events
-    // Form the docs
+//    We have to configure the UIDatePicker with a selector to handle it's events
+//    Form the docs:
 //    When properly configured, a UIDatePicker object sends an action message when a user finishes
 //    rotating one of the wheels to change the date or time; the associated control event is
 //    UIControlEventValueChanged.
@@ -45,6 +46,16 @@
 - (void)datePickerValueChanged:(UIDatePicker *)sender
 {
     NSLog(@"%@", sender.date);
+}
+
+- (IBAction)doneButtonPressed:(id)sender {
+    NSString *message = @"Some message here";
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
+                                                    message:message
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
 }
 
 @end
