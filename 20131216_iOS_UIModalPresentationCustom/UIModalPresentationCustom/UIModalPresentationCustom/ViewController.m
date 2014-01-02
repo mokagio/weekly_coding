@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ModalViewController.h"
+#import "ModalNoXIBViewController.h"
 
 @interface ViewController ()
 - (IBAction)presentModalViewController:(id)sender;
@@ -28,7 +29,14 @@
 }
 
 - (IBAction)presentModalViewController:(id)sender {
-    ModalViewController *modal = [[ModalViewController alloc] init];
+//    ModalViewController *modal = [[ModalViewController alloc] init];
+    ModalNoXIBViewController *modal = [[ModalNoXIBViewController alloc] init];
+    
+    self.modalPresentationStyle = UIModalPresentationPageSheet;
+    
+    CGFloat height = 100;
+    modal.view.bounds = CGRectMake(0, self.view.frame.size.height - height, self.view.frame.size.width, height);
+    
     [self presentViewController:modal animated:YES completion:nil];
 }
 
