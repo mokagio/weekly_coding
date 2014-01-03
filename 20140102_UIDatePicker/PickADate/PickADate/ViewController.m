@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <NSDate+TimeAgo.h>
 
 @interface ViewController ()
 - (IBAction)doneButtonPressed:(id)sender;
@@ -59,7 +60,20 @@
 }
 
 - (IBAction)doneButtonPressed:(id)sender {
-    NSString *message = [NSString stringWithFormat:@"The date you picked is: %@.\n I'm good, am I not?! ;)", self.date];
+    
+    NSString *time = @"";
+    if ([self.date timeIntervalSinceNow] <= 0) {
+        time = [self.date timeAgo];
+    } else {
+        // in the future!
+        NSInteger ti = (NSInteger)[self.date timeIntervalSinceNow];
+        NSInteger minutes = (ti / 60) % 60;
+        NSInteger hours = (ti / 3600);
+        NSInteger days = (ti / 86400);
+        time = [NSString stringWithFormat:@"%d days, %d hours and %d minutes in the future", days, hours, minutes];
+    }
+    
+    NSString *message = [NSString stringWithFormat:@"The date you picked is: %@.\n I'm good, eh?! ;)", time];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
                                                     message:message
                                                    delegate:nil
